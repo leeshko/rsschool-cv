@@ -1,0 +1,10 @@
+.page {
+    background-color: rgb(241, 238, 233);
+    font-size: 20px;
+    padding-left: 50px;
+}
+
+.align-center {
+    width: 1024px;
+    margin: 0 auto;
+}
