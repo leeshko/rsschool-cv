@@ -1,9 +1,11 @@
 # RESUME
 
  **LISHKO DMITRI**
-*The Republic of Belarus, Baranovichi, 2 Kolpenicki per, 4
+
+*The Republic of Belarus, Baranovichi, 2 Kolpenicki per, 4*
+
 phone number **+375297264900**  
-e-mail: **pumpkin@tut.by** *
+email: <pumpkin@tut.by> 
 
 * This year I decided to fulfill my dream, to become a front-end developer. 
 I was interested in this direction since my school years, however, by coincidence, 
