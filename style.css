@@ -1,0 +1,91 @@
+address {
+    line-height: 20px;
+}
+
+.image {
+    width: 200px;  
+    float: left;
+    border-radius: 20px;
+    border: 3px #CCCCCC solid;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+.mail {
+    color: black; 
+    text-decoration: none;
+}
+
+.main-text {
+    text-indent: 0px; 
+    text-align: justify; 
+    line-height: 25px; 
+    padding-right: 10px;
+}
+
+.main-div {
+    background-color: rgb(233, 225, 214);
+    font-size: 20px;
+    padding: 5%;
+    margin: 60px;
+    border-radius: 40px;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    flex-wrap:wrap;
+    padding: 0px;
+}
+
+ul li {
+    color: rgb(27, 23, 19);
+    background-color: rgb(197, 183, 173);
+    width: 40%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    list-style-type: none;
+    text-align: justify;
+}
+
+ul li li {
+    list-style-type: disc;
+}
+
+@media screen and (max-width: 768px) {
+    .image {
+        width: 150px;
+    }
+    .box {
+        flex-direction: column;
+    }
+    ul li {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .image {
+        width: 150px;
+        float: none;
+    }
+
+    
+
+    .main-div {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .image {
+        width: 100px;
+        float: none;
+    }
+    .main-div {
+        font-size: 13px;
+    }
+}
