@@ -40,17 +40,22 @@ address {
     padding: 0px;
 }
 
-ul li {
+.box-content {
     color: rgb(27, 23, 19);
-    background-color: rgb(197, 183, 173);
-    width: 40%;
-    margin-bottom: 2%;
-    border-radius: 10px;
-    list-style-type: none;
-    text-align: justify;
+    background-color: rgb(233, 225, 214);
+    width: 50%;
 }
 
-ul li li {
+.text-in-box {
+    background-color: rgb(197, 183, 173);
+    width: 90%;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.disc {
     list-style-type: disc;
 }
 
@@ -61,7 +66,7 @@ ul li li {
     .box {
         flex-direction: column;
     }
-    ul li {
+    .box-content {
         width: 90%;
     }
 }
@@ -70,14 +75,11 @@ ul li li {
     .image {
         width: 150px;
         float: none;
-    }
-
-    
+}
 
     .main-div {
         font-size: 15px;
     }
-
 }
 
 @media screen and (max-width: 480px) {
