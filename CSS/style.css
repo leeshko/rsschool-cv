@@ -11,6 +11,7 @@ html {
     font-family: Lato, Verdana, sans-serif;
     font-size: 10px;   
     max-width: 1024px; 
+    margin: auto;
 }
 
 h1 {
@@ -90,50 +91,108 @@ h1 {
     background: #323746;
 }
 
-/*
-
-
-.wrapper {
+.main-screen {
     background-color: #F06C64;
     height: 594px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    
+    
 }
 
 .arrow {
     height: 27px;
     width: 16px;
+    flex-grow: 1;
 }
 
-.home {
-    color: red;
+.left-arrow {
+    padding: 283px 55.5px 0 40px;
+}
+
+.right-arrow {
+    padding: 283px 40px 0 0;
+
+}
+
+.completely-vertical {
+    flex-grow: 2;
+    padding-top: 54px;
+
+}
+
+.shadow-vertical {
     position: absolute;
-    background-color: royalblue;
 }
 
 .phone-vertical {
-    height: 458px;
+    position: absolute;
+    width: 216px;
+}
+
+.display-vertical {
+    position: absolute;
+    padding-top: 65px;
+    padding-left: 14px;
+
+}
+
+.completly-horizontal {
+    padding-top: 176.5px;
+    padding-right: 81px;
+    position: relative;
+    flex-grow: 3;
 }
 
 .phone-horizontal {
     width: 458px;
+    position: absolute;
 }
+
+.display-horizontal {
+    position: absolute;
+    padding: 14px 0px 0px 60px;
+}
+
+.shadow-horizontal {
+    position: absolute;
+} 
 
 .under-phone-border {
     height: 6px;
     background-color:#EA676B;
-    position: absolute;
-    height: 6px;
-    left: 0px;
-    top: 689px;
 }
 
-.service {
+.service-block {
     background-color: #F2F2F2;
-    position: absolute;
-    height: 494px;
-    top: 695px;
 }
+
+h2 {
+    padding-top: 59px;
+    padding-left: 40px;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    color: #666D89;
+}
+
+.service-description {
+    padding-left: 40px;
+    padding-top: 18px;
+    padding-right: 44px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: left;
+    color: #767E9E;
+
+}
+
+/*
+
+
+
+
 
 .third-border {
     position: absolute;
