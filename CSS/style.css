@@ -9,8 +9,8 @@
 
 html {
     font-family: Lato, Verdana, sans-serif;
-    font-size: 10px;   
-    max-width: 1024px; 
+    font-size: 10px;
+    max-width: 1024px;
     margin: auto;
 }
 
@@ -38,7 +38,7 @@ h1 {
 
 .star {
     color: red;
-    font-size: 25px; 
+    font-size: 25px;
 }
 
 .header {
@@ -77,8 +77,8 @@ h1 {
     content: "\2B24";
     font-size: 4px;
     color: #FFFFFF;
-    margin-left: 12px;
-    position: absolute; 
+    margin-left: 16px;
+    position: absolute;
     padding-top: 5px;
 }
 
@@ -96,8 +96,6 @@ h1 {
     height: 594px;
     display: flex;
     justify-content: space-between;
-    
-    
 }
 
 .arrow {
@@ -112,13 +110,11 @@ h1 {
 
 .right-arrow {
     padding: 283px 40px 0 0;
-
 }
 
 .completely-vertical {
     flex-grow: 2;
     padding-top: 54px;
-
 }
 
 .shadow-vertical {
@@ -134,7 +130,6 @@ h1 {
     position: absolute;
     padding-top: 65px;
     padding-left: 14px;
-
 }
 
 .completly-horizontal {
@@ -156,71 +151,166 @@ h1 {
 
 .shadow-horizontal {
     position: absolute;
-} 
+}
 
 .under-phone-border {
     height: 6px;
-    background-color:#EA676B;
+    background-color: #EA676B;
 }
 
-.service-block {
+.service-menu {
     background-color: #F2F2F2;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 h2 {
     padding-top: 59px;
-    padding-left: 40px;
     font-weight: 900;
-    font-size: 30px;
+    font-size: 3rem;
     line-height: 36px;
     color: #666D89;
 }
 
 .service-description {
-    padding-left: 40px;
     padding-top: 18px;
-    padding-right: 44px;
-    font-size: 18px;
+    padding-right: 4px;
+    font-size: 1.8rem;
     font-weight: 300;
-    line-height: 30px;
+    line-height: 3rem;
     text-align: left;
     color: #767E9E;
-
 }
 
-/*
+.layer-3-column {
+    padding: 60px 0 26px 0px;
+}
 
+.our-services-navigation {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.service-block {
+    width: 300px;
+    height: 104px;
+    display: flex;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
 
+.service-text {
+    padding: 0 20px;
+}
 
+h3 {
+    color: #666D89;
+    font-size: 1.8rem;
+    font-weight: 900;
+    line-height: 1.8rem;
+    padding-bottom: 7px;
+}
+
+.about-service {
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    color: #666D89;
+}
 
 .third-border {
-    position: absolute;
     height: 6px;
-    top: 1189px;
-    background:#FFFFFF;
+    background: #FFFFFF;
 }
 
-.portfolio  {
+.portfolio {
     background-color: #2D303A;
-    position: absolute;
     height: 864px;
-    top: 1195px;
 }
 
-.last-border {
-    position: absolute;
-    height: 6px;
-    top: 2059px;
-    background-color: #323746;
+.portfolio-text {
+    margin-left: 40px;
+}
+
+.portfolio-description {
+    margin: 13.87px 44px 35.18px 40px;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: #767E9E;
+}
+
+.tag-field {
+    margin-left: 40px;
+    width: 290px;
+    height: 22px;
+}
+
+.tag {
+    color: #767E9E;
+    border: 1px solid #767E9E;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 4px 3px 6px 3px;
+    text-align: center;
+}
+
+.tag-active {
+    color: #DEDEDE;
+    border: 1px solid #BBBBBB;
+}
+
+.tag-links {
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+.portfolio-boxes {
+    margin: 18px 40px 68px 40px;
+    height: 601px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.portfolio-photo {
+    width: 220px;
+    height: 187px;
 }
 
 footer {
-    position: absolute;
     height: 76px;
-    background:#323746;
-    top: 2059px;
-    
+    background: #323746;
 }
 
-*/
+.copyright {
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 30px;
+    font-weight: 900;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: #666D89;
+}
+
+.social {
+    display: inline-block;
+    margin-top: 22px;
+    margin-left: 668px;
+}
+
+.social-button {
+    margin-right: 8px;
+    width: 32px;
+    height: 32px;
+}
+
+.social-button:last-child {
+    margin-right: 0px;
+}
+
+.last-border {
+    height: 6px;
+    background-color: #323746;
+}
