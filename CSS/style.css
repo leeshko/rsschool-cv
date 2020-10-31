@@ -10,19 +10,22 @@
 html {
     font-family: Lato, Verdana, sans-serif;
     font-size: 10px;
-    max-width: 1024px;
+    max-width: 1020px;
     margin: auto;
 }
 
 h1 {
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 
 .header {
     height: 89px;
     background: #2D303A;
-    font-size: 25px;
+    font-size: 2.5rem;
     display: flex;
+    border-bottom-width: 6px;
+    border-bottom-color: #323746;
+    border-bottom-style: solid;
 }
 
 .logo {
@@ -38,7 +41,7 @@ h1 {
 
 .star {
     color: red;
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 
 .header {
@@ -57,7 +60,7 @@ h1 {
 .navigation-links {
     display: inline-block;
     margin-top: 42px;
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: bold;
     letter-spacing: -0.035em;
     color: #FFFFFF;
@@ -75,7 +78,7 @@ h1 {
 
 .navigation-links::after {
     content: "\2B24";
-    font-size: 4px;
+    font-size: 0.4rem;
     color: #FFFFFF;
     margin-left: 16px;
     position: absolute;
@@ -86,9 +89,9 @@ h1 {
     content: none;
 }
 
-.upper-border {
-    height: 6px;
-    background: #323746;
+.navigation-links:hover {
+    color: #F06C64;
+    transition: 0.3s;
 }
 
 .main-screen {
@@ -96,6 +99,9 @@ h1 {
     height: 594px;
     display: flex;
     justify-content: space-between;
+    border-bottom-width: 6px;
+    border-bottom-color:#EA676B;
+    border-bottom-style: solid;
 }
 
 .arrow {
@@ -119,6 +125,7 @@ h1 {
 
 .shadow-vertical {
     position: absolute;
+    width: 240px;
 }
 
 .phone-vertical {
@@ -153,15 +160,13 @@ h1 {
     position: absolute;
 }
 
-.under-phone-border {
-    height: 6px;
-    background-color: #EA676B;
-}
-
 .service-menu {
     background-color: #F2F2F2;
     padding-left: 40px;
     padding-right: 40px;
+    border-bottom: solid;
+    border-bottom-width: 6px;
+    border-bottom-color: #ffffff;
 }
 
 h2 {
@@ -218,11 +223,6 @@ h3 {
     color: #666D89;
 }
 
-.third-border {
-    height: 6px;
-    background: #FFFFFF;
-}
-
 .portfolio {
     background-color: #2D303A;
     height: 864px;
@@ -250,7 +250,7 @@ h3 {
     color: #767E9E;
     border: 1px solid #767E9E;
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 1.2rem;
     padding: 4px 3px 6px 3px;
     text-align: center;
 }
@@ -266,7 +266,7 @@ h3 {
 }
 
 .portfolio-boxes {
-    margin: 18px 40px 68px 40px;
+    margin: 18px 40px 0px 40px;
     height: 601px;
     display: flex;
     flex-wrap: wrap;
@@ -279,13 +279,21 @@ h3 {
     height: 187px;
 }
 
+.portfolio-photo:nth-child(n+13) {
+    display: none;
+}
+
 footer {
     height: 76px;
-    background: #323746;
+    background: #2D303A;
+    border-top: solid;
+    border-top-color: #323746;
+    border-top-width: 6px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .copyright {
-    display: inline-block;
     margin-left: 40px;
     margin-top: 30px;
     font-weight: 900;
@@ -295,9 +303,8 @@ footer {
 }
 
 .social {
-    display: inline-block;
     margin-top: 22px;
-    margin-left: 668px;
+    padding-right: 42px;
 }
 
 .social-button {
@@ -310,7 +317,219 @@ footer {
     margin-right: 0px;
 }
 
-.last-border {
-    height: 6px;
-    background-color: #323746;
+@media (max-width: 1020px) {
+    .phone-vertical {
+        width: 162.36px;  /*почему-то высотой элемента не делается*/
+    }
+
+    .phone-horizontal {
+        width: 344.26px;
+    }
+
+    .shadow-vertical {
+        width: 180.71px;
+    }
+
+    .display-vertical {
+        width: 141.55px;
+        padding: 49px 0px 0px 10px;
+    }
+
+    .phone-horizontal {
+        width: 344.26px;
+        position: absolute;
+    }
+    
+    .shadow-horizontal {
+        width: 363.67px;
+    }
+    
+    .display-horizontal {
+        width: 250.73px;
+        padding: 10px 0px 0px 46px;
+    }
+
+    .service-block {
+        width: 45%;
+    }
+
+    .portfolio-boxes {
+      justify-content: space-between;
+      align-content: space-between;
+      height: 1094px;
+      align-content: flex-start;
+    }
+
+    .portfolio {
+        background-color: #2D303A;
+        height: 1094px;
+    }
+
+    .portfolio-photo {
+        width: 216.19px;
+        height: 183.76px;
+        width: 26%;
+        margin-bottom: 19.65px;
+    }
+
 }
+
+@media (max-width: 768px) {
+
+    .main-screen {
+        height: 218.38px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom-width: 6px;
+        border-bottom-color:#EA676B;
+        border-bottom-style: solid;
+    }
+
+    .completely-vertical {
+        flex-grow: 2;
+        padding-top: 20.01px;
+    }
+
+    .phone-vertical {
+        width: 79.28px; 
+    }
+
+    .phone-horizontal {
+        width: 168.1px;
+    }
+
+    .shadow-vertical {
+        width: 88.24px;
+    }
+
+    .display-vertical {
+        width: 69.12px;
+        padding: 24px 0px 0px 5px;
+    }
+
+    .completly-horizontal {
+        padding-top: 64.97px;
+        padding-right: 17.95px;
+        position: relative;
+        flex-grow: 3;
+    }
+
+    .phone-horizontal {
+        width: 168.1px;
+        position: absolute;
+    }
+    
+    .shadow-horizontal {
+        width: 177.57px;
+    }
+    
+    .display-horizontal {
+        width: 122.43px;
+        padding: 5px 0px 0px 22px;
+    }
+
+    .left-arrow {
+        padding: 98.45px 16.6px 0 10.25px;
+    }
+
+    .right-arrow {
+        padding: 98.45px 9.64px 0 0;
+    }
+
+    .service-block {
+        width: 51%;
+    }
+
+    .portfolio-boxes {
+        margin: 25px 30px 0px 30px;
+        height: 844px;
+    }
+    
+    .portfolio-photo {
+        width: 151px;
+        height: 128px;
+        width: 50%;
+        margin-bottom: 14px;
+    }
+}
+
+@media (max-width: 375px) {  
+    /* еще не делал */
+
+    .main-screen {
+        height: 218.38px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom-width: 6px;
+        border-bottom-color:#EA676B;
+        border-bottom-style: solid;
+    }
+
+    .completely-vertical {
+        flex-grow: 2;
+        padding-top: 20.01px;
+    }
+
+    .phone-vertical {
+        width: 79.28px; 
+    }
+
+    .phone-horizontal {
+        width: 168.1px;
+    }
+
+    .shadow-vertical {
+        width: 88.24px;
+    }
+
+    .display-vertical {
+        width: 69.12px;
+        padding: 24px 0px 0px 5px;
+    }
+
+    .completly-horizontal {
+        padding-top: 64.97px;
+        padding-right: 17.95px;
+        position: relative;
+        flex-grow: 3;
+    }
+
+    .phone-horizontal {
+        width: 168.1px;
+        position: absolute;
+    }
+    
+    .shadow-horizontal {
+        width: 177.57px;
+    }
+    
+    .display-horizontal {
+        width: 122.43px;
+        padding: 5px 0px 0px 22px;
+    }
+
+    .left-arrow {
+        padding: 98.45px 16.6px 0 10.25px;
+    }
+
+    .right-arrow {
+        padding: 98.45px 9.64px 0 0;
+    }
+
+    .service-block {
+        width: 51%;
+    }
+
+    .portfolio-boxes {
+        margin: 25px 30px 0px 30px;
+        height: 844px;
+    }
+    
+    .portfolio-photo {
+        width: 151px;
+        height: 128px;
+        width: 50%;
+        margin-bottom: 14px;
+    }
+}
+
