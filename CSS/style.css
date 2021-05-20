@@ -195,7 +195,6 @@ h2 {
 
 .service-block {
     width: 300px;
-    height: 104px;
     display: flex;
     margin-bottom: 20px;
     flex-grow: 1;
@@ -489,5 +488,29 @@ footer {
         height: 128px;
         width: 50%;
         margin-bottom: 14px;
+    }
+}
+
+@media (max-width: 375px) {
+    .portfolio-photo {
+        width: 46%;
+        margin-bottom: 0px;
+    }
+
+    .portfolio-boxes {
+        height: auto;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .copyright {
+       display: none;
+    }
+
+    .social {
+        padding-right: 0px;
     }
 }
